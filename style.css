@@ -1,0 +1,73 @@
+.flightline {
+    z-index:0;
+    position:absolute;
+    top:-16px;
+}
+
+.apcode {
+    font-size:250%;
+}
+
+.flighticon {
+  position: absolute;
+  top: -30px;
+  left: -30px;
+  height: 60px;
+  width: 60px;
+  z-index: 1;
+  text-align:center;
+  vertical-align:middle;
+  opacity: 0.7;
+  transition: left 2s;
+  -webkit-transition: left 2s;
+  background-image: url("plane.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#table {
+  margin: 0 auto;
+}
+
+#h1 {
+  text-align: center;
+}
+
+.dropdown {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 10px;
+  background-color: lightgreen;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 15px;
+}
+
+.dropdown select {
+  vertical-align: middle;
+  background-color: transparent;
+  border: none;
+}
+
+.grid {
+  display: grid;
+  grid-template-rows: 24% 52% 24%;
+  grid-template-areas:
+    "abflug animation ankunft";
+}
+
+#abflug {
+  grid-area: abflug;
+  justify-self: right;
+}
+
+#ankunft {
+  grid-area: ankunft;
+  justify-self: left;
+}
+
+#mid {
+  grid-area: animation;
+  justify-self: center;
+  margin-top: 50px;
+}
